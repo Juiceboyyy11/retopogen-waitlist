@@ -9,8 +9,8 @@
     "deploy": "netlify deploy --prod"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "@netlify/blobs": "^7.0.0"
+    "@supabase/supabase-js": "^2.90.1",
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "netlify-cli": "^17.0.0"
