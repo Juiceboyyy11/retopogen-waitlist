@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Waitlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="admin-body">
+    <!-- Background -->
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+
+    <main class="admin-container">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="admin-title">
+                <h1>📊 Waitlist Dashboard</h1>
+                <a href="/" class="back-link">← Back to Landing Page</a>
+            </div>
+            <button id="refresh-btn" class="refresh-btn">
+                <span>🔄</span> Refresh
+            </button>
+        </header>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-card-icon">👥</div>
+                <div class="stat-card-content">
+                    <span id="total-subscribers" class="stat-card-number">0</span>
+                    <span class="stat-card-label">Total Subscribers</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-icon">📅</div>
+                <div class="stat-card-content">
+                    <span id="today-subscribers" class="stat-card-number">0</span>
+                    <span class="stat-card-label">Today's Signups</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-icon">📧</div>
+                <div class="stat-card-content">
+                    <button id="export-btn" class="export-btn">Export CSV</button>
+                    <span class="stat-card-label">Download List</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subscribers Table -->
+        <div class="table-container">
+            <div class="table-header">
+                <h2>📋 Subscriber List</h2>
+                <div id="table-count" class="table-count">0 subscribers</div>
+            </div>
+            <div class="table-wrapper">
+                <table id="subscribers-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Email Address</th>
+                            <th>Subscribed At</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="subscribers-body">
+                        <!-- Subscribers will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <div class="empty-icon">📭</div>
+                <h3>No subscribers yet</h3>
+                <p>Share your waitlist page to start getting subscribers!</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetopoGen | Automated Retopology for Blender</title>
+    <meta name="description"
+        content="One-click physics-based retopology for Blender. Transform sculpts into rig-ready meshes with RetopoGen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Animated background -->
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="floating-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <main class="container">
+        <div class="hero">
+            <!-- Badge -->
+            <div class="badge">
+                <span class="badge-dot"></span>
+                <span>Blender 4.0+ • Coming Soon</span>
+            </div>
+
+            <!-- Main heading -->
+            <h1 class="title">
+                <span class="gradient-text">RetopoGen</span><br>
+                One-Click Retopology
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">
+                Transform sculpts into rig-ready meshes using physics-based simulation.
+                Built for Auto-Rig Pro workflows.
+            </p>
+
+            <!-- Email form -->
+            <form id="waitlist-form" class="waitlist-form">
+                <div class="form-group">
+                    <input type="text" id="email" name="email" placeholder="Enter your email for early access" required
+                        autocomplete="email">
+                    <button type="submit" id="submit-btn">
+                        <span class="btn-text">Join Waitlist</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                </div>
+                <div id="form-message" class="form-message"></div>
+            </form>
+
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat-item">
+                    <span id="subscriber-count" class="stat-number">0</span>
+                    <span class="stat-label">Artists Waiting</span>
+                </div>
+            </div>
+
+            <!-- Features preview -->
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <span>Auto Pin System</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <span>Physics Simulation</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🧩</div>
+                    <span>Head + Body Workflow</span>
+                </div>
+            </div>
+
+            <!-- Feature cards -->
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-card-icon">🎨</div>
+                    <h3>Clean Topology</h3>
+                    <p>Wraps optimized templates onto your sculpts with perfect edge flow for animation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">🤖</div>
+                    <h3>Fully Automated</h3>
+                    <p>One click setup, smart scaling, and staged simulation handles everything.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">🔗</div>
+                    <h3>Auto-Rig Pro Ready</h3>
+                    <p>Output meshes work seamlessly with Auto-Rig Pro for instant rigging.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 RenderCraft Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
